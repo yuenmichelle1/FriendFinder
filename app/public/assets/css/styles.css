@@ -1,0 +1,14 @@
+.bg {
+    background-image: url("../images/wallpaper.png");
+
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-color: rgb(104, 151, 93);
+    opacity: .9;
+    color: black;
+}
+
