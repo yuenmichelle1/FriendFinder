@@ -4,13 +4,13 @@ var path= require("path");
 var friends = require("./app/data/friends");
 var app = express();
 var PORT = 3000;
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-// app.get("/", __dirname, function(req, res){
-
-// })
+app.use(express.static("./app/public"));
 
 var apiRoutes = require("./app/routing/apiRoutes")(app);
+var htmlRoutes= require("./app/routing/htmlRoutes")(app, path);
 
 
 
