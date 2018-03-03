@@ -4,7 +4,11 @@ var friends =  require("../data/friends");
 
 function friendsRoutes(app) {
     app.get("/api/friends", (req, res) => res.json(friends));
-    app.post("/api/friends", (req, res) => friends.push(req.body));
+    app.post("/api/friends", function(req, res) {
+        var user = req.body;
+        friends.push(user);
+        console.log('im hitting it');
+    })
     // do math in post route 
 }
 
