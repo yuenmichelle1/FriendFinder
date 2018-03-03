@@ -11,7 +11,7 @@ function survey(){
 }
 
 function grabScore(){
-    if ($("select").val === "" || $("input").val() == "" ) {
+    if ($("select").val() === "" || $("input").val() === "" ) {
         alert('Need to answer all questions');
     } else{
         $("select").each(function(){
