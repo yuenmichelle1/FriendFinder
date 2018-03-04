@@ -1,23 +1,40 @@
 var score = [];
 var userData;
+
 function survey() {
-  $("#submit").on("click", function(event) {
+  $("#submit").on("click", function (event) {
     event.preventDefault();
     grabScore();
     console.log(userData);
   });
 }
 //will store user's Score and make a new user
+
+// validate score then push score into score array
+function checkFormComplete() {
+  var isComplete = true;
+  $(".form-control").each(function () {
+    if ($(this).val() === "") {
+      isComplete = false;
+    }
+  });
+  $("select").each(function () {
+    if ($(this).val() === "") {
+      isComplete = false;
+    }
+  });
+  return isComplete;
+}
+
+
 function grabScore() {
-  if ($("select").val() === "" || $("input").val() === "") {
-    alert("Need to answer all questions");
-  } else {
-    $("select").each(function() {
-      if ($(this).val() != "") {
-        score.push($(this).val());
-      }
+  if (checkFormComplete()) {
+    $("select").each(function () {
+      score.push($(this).val());
     });
     defineNewUser();
+  } else {
+    alert("Please answer all questions");
   }
 }
 
@@ -32,7 +49,7 @@ function defineNewUser() {
 
 function postUserData() {
   // .post(url, data, callback)
-  $.post("/api/friends", userData, function(data) {
+  $.post("/api/friends", userData, function (data) {
     console.log(data);
   });
 }

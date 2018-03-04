@@ -7,7 +7,7 @@ function friendsRoutes(app) {
     app.post("/api/friends", function(req, res) {
         var user = req.body;
         friends.push(user);
-        console.log('im hitting it');
+        console.log(res.ServerResponse);
     })
     // do math in post route 
 }
