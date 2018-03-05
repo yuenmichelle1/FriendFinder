@@ -7,9 +7,6 @@ function survey() {
     grabScore();
     console.log(userData);
   });
-  $(".cancel").on("click", function(){
-    $("#results-modal").modal("hide");
-  })
 }
 
 
@@ -55,7 +52,7 @@ function postUserData() {
   $.post("/api/friends", userData, function (data) {
     $("#match-name").text(data.name);
     $("#match-img").html(`<img src =${data.photo}></img>`);
-    $("#results-modal").modal("show");
+    $("#results-modal").modal("toggle");
   });
 }
 
