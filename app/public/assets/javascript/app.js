@@ -7,6 +7,9 @@ function survey() {
     grabScore();
     console.log(userData);
   });
+  $(".cancel").on("click", function(){
+    $("#results-modal").modal("hide");
+  })
 }
 
 

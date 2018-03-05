@@ -7,10 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FriendFinder Survey</title>
 
-    <!-- Latest compiled and minified CSS & JS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="assets/css/styles.css">
 
@@ -190,7 +189,7 @@
         </div>
 
         <!-- Modal -->
-        <div id="results-modal" class="modal fade" role="dialog">
+        <div class="modal fade" id="results-modal" role="dialog">
             <div class="modal-dialog">
                 <!-- Modal content-->
                 <div class="modal-content">
@@ -205,17 +204,16 @@
                         <div id="match-img"></div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-default btn-xs cancel" data-dismiss="modal">Cancel</button>
                     </div>
-
                 </div>
             </div>
         </div>
 
+
     </div>
 
 </body>
-
 <script src="assets/javascript/app.js"></script>
 
 </html>
