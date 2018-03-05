@@ -46,11 +46,9 @@ function defineNewUser() {
     scores: score
   };
   postUserData();
-  console.log(userData);
 }
 
 function postUserData() {
-  // .post(url, data, callback)
   $.post("/api/friends", userData, function (data) {
     $("#match-name").text(data.name);
     $("#match-img").html(`<img src =${data.photo}></img>`);
