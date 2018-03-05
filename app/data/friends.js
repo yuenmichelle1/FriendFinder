@@ -1,7 +1,7 @@
 // array of objects /friends
 var friends = [{
         "name": "April Ludgate",
-        "photo": "april-ludgate.jpg",
+        "photo": "assets/images/april-ludgate.jpg",
         "scores": [
             4,
             2,
@@ -17,7 +17,7 @@ var friends = [{
     },
     {
         "name": "Andy Dwyer",
-        "photo": "andy-dwyer.gif",
+        "photo": "assets/images/andy-dwyer.gif",
         "scores": [
             3,
             4,
@@ -33,7 +33,7 @@ var friends = [{
     },
     {
         "name": "Leslie Knope",
-        "photo": "leslie-knope.gif",
+        "photo": "assets/images/leslie-knope.gif",
         "scores": [
             4,
             4,
@@ -49,7 +49,7 @@ var friends = [{
     },
     {
         "name": "Ben Wyatt",
-        "photo": "ben-wyatt.gif",
+        "photo": "assets/images/ben-wyatt.gif",
         "scores": [
             1,
             2,
@@ -65,7 +65,7 @@ var friends = [{
     },
     {
         "name": "Ron Swanson",
-        "photo": "ron-swanson.gif",
+        "photo": "assets/images/ron-swanson.gif",
         "scores": [
             4,
             5,
@@ -81,7 +81,7 @@ var friends = [{
     },
     {
         "name": "Tom Haverford",
-        "photo": "tom-haverford.gif",
+        "photo": "assets/images/tom-haverford.gif",
         "scores": [
             4,
             3,
@@ -97,7 +97,7 @@ var friends = [{
     },
     {
         "name": "Donna Meagle",
-        "photo": "donna-meagle.gif",
+        "photo": "assets/images/donna-meagle.gif",
         "scores": [
             4,
             2,
@@ -113,7 +113,7 @@ var friends = [{
     },
     {
         "name": "Ann Perkins",
-        "photo": "ann-perkins.gif",
+        "photo": "assets/images/ann-perkins.gif",
         "scores": [
             4,
             3,
@@ -129,7 +129,7 @@ var friends = [{
     },
     {
         "name": "Jerry Gergich",
-        "photo": "jerry-gergich.gif",
+        "photo": "assets/images/jerry-gergich.gif",
         "scores": [
             2,
             4,
@@ -145,7 +145,7 @@ var friends = [{
     },
     {
         "name": "Chris Traeger",
-        "photo": "chris-traeger.gif",
+        "photo": "assets/images/chris-traeger.gif",
         "scores": [
             3,
             4,
@@ -161,7 +161,7 @@ var friends = [{
     },
     {
         "name": "Jean-Ralphio Saperstein",
-        "photo": "jean-ralphio.gif",
+        "photo": "assets/images/jean-ralphio.gif",
         "scores": [
             5,
             5,

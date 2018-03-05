@@ -51,8 +51,8 @@ function postUserData() {
   // .post(url, data, callback)
   $.post("/api/friends", userData, function (data) {
     $("#match-name").text(data.name);
-    $("match-img").attr("src", data.photo);
-    $("#results-modal").modal("toggle");
+    $("#match-img").html(`<img src =${data.photo}></img>`);
+    $("#results-modal").modal("show");
   });
 }
 

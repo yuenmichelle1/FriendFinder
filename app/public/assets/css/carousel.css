@@ -37,7 +37,12 @@ p{
   }
 
   .footer {
-    size: 20px;
+    size: 10px;
+  }
+
+  #results-modal {
+    height: 400px;
+    width: 400px;
   }
   
 
