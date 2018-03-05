@@ -8,7 +8,7 @@ function friendsRoutes(app) {
     sortedFriends.forEach(friend => {
       var differenceArr = friend.scores.map((score, i) => {
         var dbFriendScore = parseInt(score);
-        var userScore = parseInt(user.score[i]);
+        var userScore = parseInt(user.scores[i]);
         return Math.abs(dbFriendScore - userScore);
       });
     //   adding the differences after getting the Absolute Val of friend score and suer score

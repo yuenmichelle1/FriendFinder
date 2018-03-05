@@ -5,6 +5,7 @@ function survey() {
   $("#submit").on("click", function (event) {
     event.preventDefault();
     grabScore();
+    $("#form_id").trigger("reset");
     console.log(userData);
   });
 }
@@ -42,9 +43,10 @@ function defineNewUser() {
   userData = {
     name: $("#name").val(),
     photo: $("#photo").val(),
-    score: score
+    scores: score
   };
   postUserData();
+  console.log(userData);
 }
 
 function postUserData() {
