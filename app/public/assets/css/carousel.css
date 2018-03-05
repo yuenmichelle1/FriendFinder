@@ -35,6 +35,10 @@ p{
     min-width: 100%;
     height: 500px;
   }
+
+  .footer {
+    size: 20px;
+  }
   
 
 /* RESPONSIVE CSS

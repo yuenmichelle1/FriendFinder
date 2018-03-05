@@ -8,7 +8,7 @@ function survey() {
     console.log(userData);
   });
 }
-//will store user's Score and make a new user
+
 
 // validate score then push score into score array
 function checkFormComplete() {
@@ -26,7 +26,7 @@ function checkFormComplete() {
   return isComplete;
 }
 
-
+//will store user's Score and make a new user
 function grabScore() {
   if (checkFormComplete()) {
     $("select").each(function () {
@@ -50,7 +50,9 @@ function defineNewUser() {
 function postUserData() {
   // .post(url, data, callback)
   $.post("/api/friends", userData, function (data) {
-    console.log(data);
+    $("#match-name").text(data.name);
+    $("match-img").attr("src", data.photo);
+    $("#results-modal").modal("toggle");
   });
 }
 
